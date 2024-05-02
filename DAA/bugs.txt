@@ -1,0 +1,36 @@
+
+/* There are a couple of issues with the provided code:
+1. **Memory Allocation Issue**:
+   In the `create_array` function, you are attempting to allocate memory for an array using `calloc`, but the allocated memory is not being passed back to the `main` function. The `A` pointer in the `main` function remains uninitialized.
+   To fix this, you can modify the `create_array` function to accept a double pointer (pointer to a pointer) and allocate memory through it. This way, the changes to the pointer within the function will reflect outside the function.
+   Here's the corrected code:
+   ```c
+   #include <stdio.h>
+   #include <stdlib.h>
+   #include <time.h>
+
+   void create_array(int **A, int n) {
+       *A = (int *)calloc(n, sizeof(int));
+   }
+
+   void print_array(int *A, int n) {
+       int i;
+       for (i = 0; i < n; i++) printf("%d ", A[i]);
+       printf("\n");
+   }
+
+   int main() {
+       int *A;
+       create_array(&A, 5);
+       print_array(A, 5);
+
+       // Don't forget to free the allocated memory when done.
+       free(A);
+
+       return 0;
+   }
+   ```
+   By passing the address of `A` to `create_array`, the function can modify the original pointer, and the allocated memory will be accessible in the `main` function.
+2. **Memory Deallocation**:
+   After using dynamically allocated memory, it's essential to free it using the `free` function to avoid memory leaks. I added a `free(A);` statement at the end of the `main` function in the corrected code.
+These changes should resolve the issues in your code. */
