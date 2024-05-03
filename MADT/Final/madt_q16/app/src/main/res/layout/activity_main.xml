@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/input"
+        android:hint="Input"
+        android:gravity="end"
+        android:padding="10dp"
+        android:textSize="25sp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/output"
+        android:hint="Output"
+        android:gravity="end"
+        android:padding="10dp"
+        android:textSize="35sp" />
+
+    <TableLayout
+        android:id="@+id/calculator_table_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:onClick="onOperatorButtonClicked"
+        android:paddingVertical="55dp"
+        android:stretchColumns="*">
+
+        <TableRow>
+
+            <Button
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_margin="5dp"
+                android:insetLeft="0dp"
+                android:insetTop="0dp"
+                android:insetRight="0dp"
+                android:insetBottom="0dp"
+                android:onClick="onClearButtonClicked"
+                android:text="C" />
+
+            <Button
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_margin="5dp"
+                android:insetLeft="0dp"
+                android:insetTop="0dp"
+                android:insetRight="0dp"
+                android:insetBottom="0dp"
+                android:onClick="onDeleteButtonClicked"
+                android:text="De" />
+
+            <Button
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_margin="5dp"
+                android:insetLeft="0dp"
+                android:insetTop="0dp"
+                android:insetRight="0dp"
+                android:insetBottom="0dp"
+                android:onClick="onOperatorButtonClicked"
+                android:text="%" />
+
+            <Button
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_margin="5dp"
+                android:insetLeft="0dp"
+                android:insetTop="0dp"
+                android:insetRight="0dp"
+                android:insetBottom="0dp"
+                android:onClick="onOperatorButtonClicked"
+                android:text="/" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_margin="5dp"
+                android:insetLeft="0dp"
+                android:insetTop="0dp"
+                android:insetRight="0dp"
+                android:insetBottom="0dp"
+                android:onClick="onNumericButtonClick"
+                android:text="7" />
+
+            <Button
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_margin="5dp"
+                android:insetLeft="0dp"
+                android:insetTop="0dp"
+                android:insetRight="0dp"
+                android:insetBottom="0dp"
+                android:onClick="onNumericButtonClick"
+                android:text="8" />
+
+            <Button
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_margin="5dp"
+                android:insetLeft="0dp"
+                android:insetTop="0dp"
+                android:insetRight="0dp"
+                android:insetBottom="0dp"
+                android:onClick="onNumericButtonClick"
+                android:text="9" />
+
+            <Button
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_margin="5dp"
+                android:insetLeft="0dp"
+                android:insetTop="0dp"
+                android:insetRight="0dp"
+                android:insetBottom="0dp"
+                android:onClick="onOperatorButtonClicked"
+                android:text="X" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_margin="5dp"
+                android:insetLeft="0dp"
+                android:insetTop="0dp"
+                android:insetRight="0dp"
+                android:insetBottom="0dp"
+                android:onClick="onNumericButtonClick"
+                android:text="4" />
+
+            <Button
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_margin="5dp"
+                android:insetLeft="0dp"
+                android:insetTop="0dp"
+                android:insetRight="0dp"
+                android:insetBottom="0dp"
+                android:onClick="onNumericButtonClick"
+                android:text="5" />
+
+            <Button
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_margin="5dp"
+                android:insetLeft="0dp"
+                android:insetTop="0dp"
+                android:insetRight="0dp"
+                android:insetBottom="0dp"
+                android:onClick="onNumericButtonClick"
+                android:text="6" />
+
+            <Button
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_margin="5dp"
+                android:insetLeft="0dp"
+                android:insetTop="0dp"
+                android:insetRight="0dp"
+                android:insetBottom="0dp"
+                android:onClick="onOperatorButtonClicked"
+                android:text="-" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_margin="5dp"
+                android:insetLeft="0dp"
+                android:insetTop="0dp"
+                android:insetRight="0dp"
+                android:insetBottom="0dp"
+                android:onClick="onNumericButtonClick"
+                android:text="1" />
+
+            <Button
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_margin="5dp"
+                android:insetLeft="0dp"
+                android:insetTop="0dp"
+                android:insetRight="0dp"
+                android:insetBottom="0dp"
+                android:onClick="onNumericButtonClick"
+                android:text="2" />
+
+            <Button
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_margin="5dp"
+                android:insetLeft="0dp"
+                android:insetTop="0dp"
+                android:insetRight="0dp"
+                android:insetBottom="0dp"
+                android:onClick="onNumericButtonClick"
+                android:text="3" />
+
+            <Button
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_margin="5dp"
+                android:insetLeft="0dp"
+                android:insetTop="0dp"
+                android:insetRight="0dp"
+                android:insetBottom="0dp"
+                android:onClick="onOperatorButtonClicked"
+                android:text="+" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_margin="5dp"
+                android:layout_span="3"
+                android:insetLeft="0dp"
+                android:insetTop="0dp"
+                android:insetRight="0dp"
+                android:insetBottom="0dp"
+                android:onClick="onNumericButtonClick"
+                android:text="0" />
+            <!--            <Button-->
+            <!--                android:layout_width="65dp"-->
+            <!--                android:layout_height="65dp"-->
+            <!--                android:text="."-->
+            <!--                android:insetLeft="0dp"-->
+            <!--                android:insetRight="0dp"-->
+            <!--                android:insetTop="0dp"-->
+            <!--                android:insetBottom="0dp"-->
+            <!--                android:layout_margin="5dp" />-->
+            <Button
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_margin="5dp"
+                android:insetLeft="0dp"
+                android:insetTop="0dp"
+                android:insetRight="0dp"
+                android:insetBottom="0dp"
+                android:onClick="onEqualButtonClick"
+                android:text="=" />
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>

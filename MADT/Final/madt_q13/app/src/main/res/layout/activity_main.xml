@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="25dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/customer_name"
+        android:layout_marginTop="20dp"
+        android:hint="Name"
+        android:paddingHorizontal="15dp"
+        android:paddingVertical="20dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/customer_address"
+        android:layout_marginTop="10dp"
+        android:hint="Address"
+        android:paddingHorizontal="15dp"
+        android:paddingVertical="20dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/customer_phone"
+        android:inputType="number"
+        android:layout_marginTop="10dp"
+        android:hint="Phone"
+        android:paddingHorizontal="15dp"
+        android:paddingVertical="20dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/insert_customer"
+        android:layout_marginTop="20dp"
+        android:text="Insert Customer" />
+
+<!--    <Button-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:id="@+id/show_customers"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:text="Show Customers" />-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/customer_details"
+        android:hint="Customer details will be shown here."
+        android:layout_marginTop="25dp"
+        android:paddingHorizontal="15dp"
+        android:paddingVertical="20dp" />
+
+</LinearLayout>

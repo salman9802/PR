@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "phonegap": "^9.0.0"
+  }
+}

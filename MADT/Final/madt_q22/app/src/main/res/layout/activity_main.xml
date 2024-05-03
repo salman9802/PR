@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/to_edit_text"
+        android:hint="To"
+        android:layout_marginBottom="15dp"
+        android:padding="10dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/subject_edit_text"
+        android:hint="Subject"
+        android:layout_marginBottom="15dp"
+        android:padding="10dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/msg_edit_text"
+        android:hint="Message"
+        android:layout_marginBottom="15dp"
+        android:padding="10dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/add_attachment_btn"
+        android:text="Add Attachment"
+        android:layout_marginBottom="15dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/attachment_text_view"
+        android:text="No file attached"
+        android:layout_marginBottom="15dp"
+        android:padding="10dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sendt_btn"
+        android:text="Send" />
+</LinearLayout>

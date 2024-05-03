@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/name_edit_text"
+        android:padding="10dp"
+        android:hint="Enter your name"
+        android:layout_marginTop="20dp" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/message_edit_text"
+        android:padding="10dp"
+        android:hint="Enter your message"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/result_text_view"
+        android:hint="Result will appear here"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/radio_group"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/red_radio_btn"
+            android:text="Red"
+            android:checked="true"
+            android:layout_marginRight="8dp" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/green_radio_btn"
+            android:text="Green"
+            android:layout_marginRight="8dp" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/blue_radio_btn"
+            android:text="Blue" />
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bold_check_box"
+            android:text="Bold" />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/italic_check_box"
+            android:text="Italic" />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/underline_check_box"
+            android:text="Underline" />
+    </LinearLayout>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/display_msg_btn"
+        android:text="Display"
+        android:layout_marginTop="20dp" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/clear_btn"
+        android:text="Clear"
+        android:layout_marginTop="5dp" />
+
+</LinearLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dp"
+    android:orientation="vertical"
+    android:padding="15dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/student_roll_no"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Enter Roll No"
+        android:inputType="number"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/student_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Enter Name"
+        android:padding="10dp" />
+
+    <Button
+        android:id="@+id/add_student"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Add Student" />
+
+    <Button
+        android:id="@+id/all_students"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="See all Students" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/search_student_edit_text"
+        android:hint="Search student by Roll No."
+        android:inputType="number"
+        android:layout_marginTop="10dp"
+        android:padding="10dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/search_student_btn"
+        android:text="Search Student" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/search_student_text_view"
+        android:hint="Searched student will be displayed here."
+        android:layout_marginTop="15dp"
+        android:padding="10dp" />
+
+</LinearLayout>

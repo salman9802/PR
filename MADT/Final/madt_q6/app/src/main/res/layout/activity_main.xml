@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/question_text"
+            android:text="Question"
+            android:padding="15dp"
+            android:textSize="25sp"/>
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/options_group"
+            android:layout_below="@id/question_text"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/option_1"
+                android:layout_marginTop="5dp"
+                android:checked="true"
+                android:text="Option 1" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/option_2"
+                android:layout_marginTop="5dp"
+                android:text="Option 2" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/option_3"
+                android:layout_marginTop="5dp"
+                android:text="Option 3" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/option_4"
+                android:layout_marginTop="5dp"
+                android:text="Option 4" />
+        </RadioGroup>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/check_btn"
+            android:text="Check Answer"
+            android:layout_below="@id/options_group"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"/>
+    </RelativeLayout>
+
+</LinearLayout>
