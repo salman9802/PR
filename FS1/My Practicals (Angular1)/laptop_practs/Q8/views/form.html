@@ -1,0 +1,31 @@
+<form name="form" novalidate>
+    <div>
+        Enter Name: <input type="text" name="name" id="name" placeholder="Enter your name" pattern="^[^\d]+$" ng-model="name" ng-required="true"> <br>
+        <div ng-show="form.name.$touched && form.name.$invalid">
+            <small style="color: red">Name should contain characters only</small>
+        </div>
+    </div> <br>
+    <div>
+        Enter Email: <input type="email" name="email" id="email" placeholder="Enter your email" ng-model="email" ng-required="true">
+        <div ng-show="form.email.$touched && form.email.$invalid">
+            <small style="color: red">Email should be valid</small>
+        </div>
+    </div> <br>
+
+    <div>
+        Enter Mobile: <input type="number" name="mobile" id="mobile" placeholder="Enter your mobile" pattern="^[\d]{10}$" ng-model="mobile" ng-required="true">
+        <div ng-show="form.mobile.$touched && form.mobile.$invalid">
+            <small style="color: red">Mobile should be 10 digits</small>
+        </div>
+    </div> <br>
+
+    <div>
+        Enter Pincode: <input type="number" name="pincode" id="pincode" placeholder="Enter your pincode" pattern="^[\d]{6}$" ng-model="pincode" ng-required="true">
+        <div ng-show="form.pincode.$touched && form.pincode.$invalid">
+            <small style="color: red">Pin code should be 6 digits</small>
+        </div>
+    </div> <br>
+
+
+    <input type="submit" value="Submit" ng-disabled="form.$invalid">
+</form>

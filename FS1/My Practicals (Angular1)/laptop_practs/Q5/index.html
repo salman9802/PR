@@ -1,0 +1,23 @@
+<!-- Write an AngularJS script for addition of two numbers using ng-init, ng-model & ng
+bind. And also Demonstrate ng-show, ng-disabled, ng-click directives on button 
+component. -->
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q5</title>
+
+    <script src="/lib/angular.js"></script>
+    <script src="./script.js"></script>
+</head>
+<body ng-init="showSum = false; sum = undefined">
+    <div ng-controller="MainController">
+        Enter 1st number: <input type="number" ng-model="n1"> <br>
+        Enter 2nd number: <input type="number" ng-model="n2"> <br>
+        <button ng-click="calculateSum()" ng-disabled="!(n1 && n2)">Sum</button> <br>
+        <!-- <p ng-show="showSum && sum" ng-disabled="!showSum">Sum: {{ sum }}</p> -->
+        <p ng-show="showSum && sum" >Sum: <span ng-bind="sum"></span></p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!-- Using angular js Create a SPA that show Syllabus content of all subjects of MSC(CS) Sem II (use ng-view) -->
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q7</title>
+
+    <script src="/lib/angular.js"></script>
+    <script src="/lib/angular-route.js"></script>
+    <script>
+        const app = angular.module("app", ["ngRoute"]);
+
+        app.config(["$routeProvider", $routeProvider => {
+            $routeProvider
+                .when("/madt", {
+                    template: "<h5>Mobile Application Development Technologies</h5><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt in sed voluptas at reprehenderit illum harum repellat necessitatibus facere aut vitae, quidem assumenda commodi nobis!</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt in sed voluptas at reprehenderit illum harum repellat necessitatibus facere aut vitae, quidem assumenda commodi nobis!</p>".trim()
+                })
+                .when("/daa", {
+                    template: `
+                    <h5>Design and Analysis of Algorithms</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt in sed voluptas at reprehenderit illum harum repellat necessitatibus facere aut vitae, quidem assumenda commodi nobis!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt in sed voluptas at reprehenderit illum harum repellat necessitatibus facere aut vitae, quidem assumenda commodi nobis!</p>
+                    `.trim()
+                })
+                .when("/fs1", {
+                    template: `
+                    <h5>Full Stack Development - I</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt in sed voluptas at reprehenderit illum harum repellat necessitatibus facere aut vitae, quidem assumenda commodi nobis!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt in sed voluptas at reprehenderit illum harum repellat necessitatibus facere aut vitae, quidem assumenda commodi nobis!</p>
+                    `.trim()
+                })
+                .when("/spm", {
+                    template: `
+                    <h5>Software Project Management</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt in sed voluptas at reprehenderit illum harum repellat necessitatibus facere aut vitae, quidem assumenda commodi nobis!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt in sed voluptas at reprehenderit illum harum repellat necessitatibus facere aut vitae, quidem assumenda commodi nobis!</p>
+                    `.trim()
+                })
+                .otherwise({
+                    redirectTo: "/home"
+                })
+        }]);
+    </script>
+</head>
+<body>
+    <header>
+        <h2>Header</h2>
+        <div>
+            <a href="#!/madt">MADT</a>
+            <a href="#!/daa">DAA</a>
+            <a href="#!/fs1">FS1</a>
+            <a href="#!/spm">SPM</a>
+        </div>
+    </header>
+    <main ng-view></main>
+</body>
+</html>

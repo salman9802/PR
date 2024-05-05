@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q12</title>
+    <script src="/lib/angular.js"></script>
+    <script src="./script.js"></script>
+</head>
+<body>
+    <form ng-submit="submit()" ng-controller="FormController">
+        Enter username: <input type="text" name="username" id="username" ng-model="username"> <br>
+        Enter password: <input type="text" name="password" id="password" ng-model="password"> <br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!-- Using AngularJS create a SPA for Login System. -->
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPA - Login System</title>
+    <script src="/lib/angular.js"></script>
+    <script src="/lib/angular-route.js"></script>
+    <script src="./script.js"></script>
+</head>
+<body ng-init="loggedIn=false">
+
+    <div>
+        <a href="#!/signup">Signup</a> &nbsp;
+        <a href="#!/login">Login</a>
+    </div>
+
+    <main ng-view></main>
+    
+</body>
+</html>

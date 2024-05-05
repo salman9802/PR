@@ -1,0 +1,23 @@
+<!-- Create an angular JS Application that shows the location of the current web page. -->
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q13</title>
+
+    <script src="/lib/angular.js" defer></script>
+    <script src="/lib/angular-route.js" defer></script>
+    <script src="./script.js" defer></script>
+</head>
+<body ng-controller="MainController">
+    <nav>
+        <a href="#!/home">Home</a>
+        <a href="#!/about">About</a>
+    </nav>
+    <main ng-view>
+    </main>
+    Location of Current Webpage: {{currentLoc}} <br>
+    <button ng-click="setLoc()">Click to get URL</button>
+</body>
+</html>

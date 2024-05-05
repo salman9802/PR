@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q10</title>
+    <script src="/lib/angular.js"></script>
+    <script src="/lib/angular-route.js"></script>
+    <script src="./script.js"></script>
+</head>
+<body ng-init="toGreet=false;">
+    <form ng-controller="StudentRegistrationController" ng-submit="registerStudent()">
+        Student First Name: <input type="text" ng-model="studentFirstName"> <br>
+        Student Last Name: <input type="text" ng-model="studentLastName"> <br>
+        Student Age: <input type="text" ng-model="studentAge"> <br>
+        <input type="submit" value="Register">
+        <h1 ng-show="toGreet">{{greeting}}, <i>{{studentFirstName}} {{studentLastName}}</i></h1>
+    </form>
+</body>
+</html>
